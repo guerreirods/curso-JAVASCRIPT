@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+
+        <div class="screen" id="screen"></div>
+
+        <div class="botão0" id="num" onclick="clicarn(0)">0</div>
+        <div class="botão1" id="num" onclick="clicarn(7)">7</div>
+        <div class="botão2" id="num" onclick="clicarn(8)">8</div>
+        <div class="botão3" id="num" onclick="clicarn(9)">9</div>
+        <div class="botão4" id="num" onclick="clicarn(4)">4</div>
+        <div class="botão5" id="num" onclick="clicarn(5)">5</div>
+        <div class="botão6" id="num" onclick="clicarn(6)">6</div>
+        <div class="botão7" id="num" onclick="clicarn(1)">1</div>
+        <div class="botão8" id="num" onclick="clicarn(2)">2</div>
+        <div class="botão9" id="num" onclick="clicarn(3)">3</div>
+        <div class="virgula" id="num" onclick="clicarn()">.</div>
+
+        <div class="mais" id="sim" onclick="clicars('+')">+</div>
+        <div class="menos" id="sim" onclick="clicars('-')">-</div>
+        <div class="dividir" id="sim" onclick="clicars('/')">/</div>
+        <div class="multiplicar" id="sim" onclick="clicars('*')">*</div>
+
+        <div class="resultado" id="res" onclick="calcular()">=</div>
+
+        <div class="corrigir" id="cor">⌫</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

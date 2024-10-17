@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    <input type ='text'>
+    <input type ='password'>
+    <input type ='email'>
+    <input type ='number'>
+    <input type ='checkbox'>
+    <input type ='radio'>
+    <input type ='hidden'>
+    <input type ='button'>
+    <input type ='color'>
+    <input type ='file'>
+    <input type ='image'>
+-->
+<h1>Você está vivo?</h1>
+<form>
+    <label for="Sim">
+        <input type="radio" id="Sim" name="resposta" value="Sim"> Sim
+    </label>
+
+    <br>
+
+    <label for="Não">
+        <input type="radio" id="Não" name="resposta" value="Não"> Não
+    </label>
+
+    <br>
+
+    <input type="button" value="Confirmar" onclick='exibirAlert()'>
+</form>
+<script>
+    function exibirAlert() {
+        // Obtém todos os elementos de rádio com o mesmo nome "resposta"
+        var opcoes = document.getElementsByName("resposta");
+
+        // Verifica qual opção está selecionada
+        for (var i = 0; i < opcoes.length; i++) {
+            if (opcoes[i].checked) {
+                // Exibe um alerta diferente com base na opção selecionada
+                if (opcoes[i].value === "Sim") {
+                    alert('Eu imaginei que sim. Senão como poderia ter respondido? :D');
+                } else if (opcoes[i].value === "Não") {
+                    alert('Paia kkk meus pesamo ai kk');
+                }
+                break; // Sai do loop após encontrar a opção selecionada
+            }
+        }
+    }
+</script>
+</body>
+</html>

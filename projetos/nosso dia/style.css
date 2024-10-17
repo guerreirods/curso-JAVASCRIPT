@@ -1,0 +1,56 @@
+body {
+    font: normal 15pt arial;
+    color: black;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    width: 80%;
+    max-width: 500px;
+    background: linear-gradient(to right, #ffffff, #e6e6e6);
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.671);
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+div {
+    padding: 8px;
+}
+
+#msg {
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
+header h1 {
+    animation: pulse 2s infinite;
+}

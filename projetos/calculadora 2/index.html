@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="section">
+        <div id="calculadora">
+            <div id="visor">
+                <p>visor</p>
+            </div>
+            <div id="teclado">
+                <button id="tecla" onclick="press(this)">7</button>
+                <button id="tecla" onclick="press(this)">8</button>
+                <button id="tecla" onclick="press(this)">9</button>
+                <button id="tecla" onclick="sinal(this)">/</button>
+                <button id="tecla" onclick="press(this)">4</button>
+                <button id="tecla" onclick="press(this)">5</button>
+                <button id="tecla" onclick="press(this)">6</button>
+                <button id="tecla" onclick="sinal(this)">*</button>
+                <button id="tecla" onclick="press(this)">1</button>
+                <button id="tecla" onclick="press(this)">2</button>
+                <button id="tecla" onclick="press(this)">3</button>
+                <button id="tecla" onclick="sinal(this)">-</button>
+                <button id="tecla">:D</button>
+                <button id="tecla" onclick="press(this)">0</button>
+                <button id="tecla" class="igual" onclick="calcular()">=</button>
+                <button id="tecla" onclick="sinal(this)">+</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
