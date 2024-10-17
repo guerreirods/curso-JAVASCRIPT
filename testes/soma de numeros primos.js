@@ -13,4 +13,4 @@ function sumOfMultiples(number) {
 
     return sum;
 }
-console.log(sumOfMultiples(11));
+console.log(sumOfMultiples(7));
